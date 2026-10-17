@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex - Page 2</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <span class="brand">Pokédex</span>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="toolbar">
+        <div>
+          <h1>Pokédex</h1>
+          <p class="subtitle">Type a name and press Enter. Results appear after a 4-second delay.</p>
+        </div>
+        <div id="search-box" class="search" role="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="M20 20l-3.5-3.5"></path>
+          </svg>
+          <input id="search" type="search" placeholder="Search Pokémon by name or number..." autocomplete="off" aria-label="Search Pokémon" />
+        </div>
+      </section>
+
+      <div id="status" class="status" aria-live="polite" hidden>
+        <span class="spinner" aria-hidden="true"></span>
+        <span id="status-text"></span>
+      </div>
+
+      <p id="error" class="error" hidden></p>
+      <section id="grid" class="grid"></section>
+      <p id="empty" class="empty" hidden>No Pokémon match your search.</p>
+
+      <div class="load-more">
+        <button id="load-more" class="btn" type="button" hidden>Load more</button>
+      </div>
+    </main>
+
+    <script src="js/card.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/pokemon-modal.js"></script>
+    <script src="js/page2.js"></script>
+  </body>
+</html>
