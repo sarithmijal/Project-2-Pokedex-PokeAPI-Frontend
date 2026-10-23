@@ -3,7 +3,8 @@
 // The 3 endpoints used in this project:
 //   1) /pokemon            -> list of names + data of one Pokémon (image, types, stats...)
 //   2) /pokemon-species    -> description text, genus, habitat and the evolution chain URL
-//   3) /evolution-chain    -> NESTED evolution data (used in the detail page)
+//   3) /evolution-chain    -> NESTED evolution data (used in the detail page) (Nested tree structure with the
+// complete evolutionary stages.)
 
 const API_BASE = "https://pokeapi.co/api/v2";
 
